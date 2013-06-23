@@ -26,13 +26,13 @@ body{
 	width: 260px;
 	height: 650px;
 	float: right;
-	background-image: url("./handup.png");
+	background-image: url("./imgs/handup.png");
 }
 
 #head{
 	width: 700px;
 	height: 500px;
-	background-image: url("./head.png");
+	background-image: url("./imgs/head.png");
 }
 
 #body{
@@ -73,7 +73,7 @@ body{
 	width: 700px;
 	height: 150px;
 	margin-top: -150px;
-	background-image: url("./cover.png");
+	background-image: url("./imgs/cover.png");
 	z-index: 100;
 }
 
@@ -84,7 +84,7 @@ body{
 	left: 200px;
 	top: 10px;
 	z-index: 150;
-	background-image: url("./candy.png");
+	background-image: url("./imgs/candy.png");
 	display: none;
 }
 
