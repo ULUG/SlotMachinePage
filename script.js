@@ -22,17 +22,17 @@ test_line += "<img src='./imgs/0.png' class='number'>";
 test_line += "<img src='./imgs/0.png' class='number'>";
 test_line += "<img src='./imgs/0.png' class='number'>";
 
-function body_onload(){
+function onloadBody(){
 	num_frame_generator();
 }
 
-function start(){
+function clickHandle(){
 	if(isProc == 0){
 		isProc = 1;
 		speed = 1;
 		si = setInterval("move()", speed);
 		setTimeout("slowdown()", fast_time);
-		document.getElementById("right").style.backgroundImage="url('./imgs/handdown.png')";
+		document.getElementById("rightArea").style.backgroundImage="url('./imgs/handdown.png')";
 	}
 }
 
@@ -50,21 +50,21 @@ function slowdown(){
 			num_frame_margin = -125;
 		}
 
-		document.getElementById("number_frame").style.marginTop = num_frame_margin;
-		document.getElementById("right").style.backgroundImage="url('./imgs/handup.png')";
+		document.getElementById("numberFrame").style.marginTop = num_frame_margin;
+		document.getElementById("rightArea").style.backgroundImage="url('./imgs/handup.png')";
 		isProc = 0;
 	}
 }
 
 function num_frame_generator(){
 	var result = "";
-	result += "<div id='number_frame'>";
+	result += "<div id='numberFrame'>";
 	result += first_line;
 	result += second_line;
 	result += third_line;
 	result += "</div>";
 
-	document.getElementById("number").innerHTML = result;
+	document.getElementById("numberLayer").innerHTML = result;
 }
 
 num_frame_margin = 0;
@@ -79,7 +79,7 @@ function move(){
 		third_line = test_line;
 		num_frame_generator();
 	}
-	document.getElementById("number_frame").style.marginTop = num_frame_margin;
+	document.getElementById("numberFrame").style.marginTop = num_frame_margin;
 }
 
 function num_generator(){
@@ -122,12 +122,12 @@ for(i = 0; i < maxvalue; i++){
 	}
 }
 
-function click_candy(){
-	if(document.getElementById("innum").value != ""){
+function clickCandy(){
+	if(document.getElementById("maxNumberInputBox").value != ""){
 //		alert("숫자를 입력하세요");
 //	}else {
-		maxvalue = document.getElementById("innum").value;
-		document.getElementById("candy").style.display="none";
+		maxvalue = document.getElementById("maxNumberInputBox").value;
+		document.getElementById("candyDialog").style.display="none";
 		maxvalue = parseInt(maxvalue);
 		for(i = 0; i < maxvalue; i++){
 			num_arr[i] = 1;
@@ -135,6 +135,6 @@ function click_candy(){
 	}	
 }
 
-function click_mouth(){
-	document.getElementById("candy").style.display = "block";
+function clickMouth(){
+	document.getElementById("candyDialog").style.display = "block";
 }

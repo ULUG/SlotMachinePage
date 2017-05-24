@@ -1,31 +1,29 @@
 <html>
 <head>
-	<title>Jackpot for ULUG Seminar</title>
-	<link rel="stylesheet" href="./default.css" type="text/css">
-	<script language="javascript" src="./default.js"></script>
+	<title>Slot Machine</title>
+	<link rel="stylesheet" type="text/css"  href="./style.css">
+	<script type="text/javascript" src="./script.js"></script>
 </head>
-<body onload="body_onload();">
-<div id="tux">
-	<div id="left">
-		<div id="head">
-			<img src="./imgs/gift_is_mine.png" class="gift_is_mine">
-			<div id="mouth" onclick="click_mouth();">
-			</div>
+<body onload="onloadBody();">
+<div id="tuxArea">
+	<div id="leftArea">
+		<div id="headArea">
+			<img class="symbolImageOfPage" src="./imgs/gift_is_mine.png" />
+			<div id="mouthArea" onclick="clickMouth();"></div>
 		</div>
-		<div id="body">
-			<div id="number">
-			</div>
-			<div id="cover">
-			</div>
+		<div id="bodyArea">
+			<div id="numberLayer"></div>
+			<div id="coverLayer"></div>
 		</div>
 	</div>
-	<div id="right" onclick="start();">
+	<div id="rightArea" onclick="clickHandle();"></div>
+	<div id="candyDialog" onclick="clickCandy();">
+		<input type="text" id="maxNumberInputBox" />
 	</div>
-	<div id="candy" onclick="click_candy();">
-		<input type="text" id="innum"></input>
-	</div>
-	Designed by Eugene Kim (SOLUX)<br>
-	Built by Jae-hun Jeong (DLUG)
 </div>
+<ul id="makerArea">
+	<li>Designed by Eugene Kim (SOLUX)</li>
+	<li>Developed by Jaehoon Jeong (DLUG)</li>
+</ul>
 </body>
 </html>
