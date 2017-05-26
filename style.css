@@ -20,3 +20,6 @@ body { background-color: #A4DCFF; }
 
 #makerArea {}
 #makerArea li { margin: 5px; }
+
+div#preloadedImages { position: absolute; overflow: hidden; left: -9999px; top: -9999px; width: 1px; height: 1px; }
+img.preloaded_image { width: 1px; height: 1px; }
