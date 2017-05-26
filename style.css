@@ -1,0 +1,25 @@
+body { background-color: #A4DCFF; }
+
+#symbolImageOfPage { margin: 40px 0px 0px 20px; }
+
+#tuxArea { width: 960px; height: 650px; margin-bottom: 10px; }
+#tuxArea #leftArea { width: 700px; height: 650px; float: left; overflow: hidden; }
+#tuxArea #rightArea {	width: 260px; height: 650px; float: right; background-image: url("./imgs/handup.png"); }
+#tuxArea #headArea { width: 700px; height: 500px; background-image: url("./imgs/head.png"); }
+#tuxArea #bodyArea { width: 700px; height: 150px; }
+#tuxArea #mouthArea { position: absolute; width: 80px; height: 80px; top: 245px; left: 445px; z-index: 200; }
+
+#numberLayer { width: 450px; height: 150px; margin-left: 275px; overflow: hidden; }
+#numberLayer #numberFrame { width: 450px; padding-top: 15px; z-index: 1; }
+#numberLayer #numberFrame .number { margin-right: 20px; width: 125px; height: 125px; }
+
+#coverLayer { position: relative; width: 700px; height: 150px; margin-top: -150px; background-image: url("./imgs/cover.png"); z-index: 100; }
+
+#candyDialog { width: 566px; height: 502px; position: absolute; left: 200px;top: 10px; z-index: 150; background-image: url("./imgs/candy.png"); display: none; }
+#candyDialog #maxNumberInputBox { position: absolute; top: 205px; left: 150px; width: 200px; height: 100px; font-size: 80px; text-align: center; }
+
+#makerArea {}
+#makerArea li { margin: 5px; }
+
+div#preloadedImages { position: absolute; overflow: hidden; left: -9999px; top: -9999px; width: 1px; height: 1px; }
+img.preloaded_image { width: 1px; height: 1px; }
